@@ -14,8 +14,8 @@ let box = 32;
 
 let snake = [];
 snake[0]={
-	x : 4*32,
-	y : 7*32
+	x : 4*box,
+	y : 7*box
 }
 // food image
 
@@ -165,7 +165,7 @@ function draw(){
             }
         }
         else{
-            localStorage.setItem("Highscore", score);
+            localStorage.setItem("Highscore", 0);
         }
         clearInterval(game);
         ctx.drawImage(gameover,0,0,512,371,cvs.width/2-100,cvs.height/2-100,200,200);
